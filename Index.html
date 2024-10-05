@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baker's Hut - Themed and Occasion Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Baker's Hut</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#themed-cakes">Themed Cakes</a></li>
+                <li><a href="#occasion-cakes">Occasion Cakes</a></li>
+                <li><a href="#custom-order">Custom Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Baker's Hut</h1>
+            <p>Discover our delightful range of themed and occasion cakes!</p>
+        </section>
+
+        <section id="themed-cakes">
+            <h2>Themed Cakes</h2>
+            <div class="cake-grid" id="themed-cakes-grid"></div>
+        </section>
+
+        <section id="occasion-cakes">
+            <h2>Occasion Cakes</h2>
+            <div class="cake-grid" id="occasion-cakes-grid"></div>
+        </section>
+
+        <section id="custom-order">
+            <h2>Custom Order</h2>
+            <form id="custom-order-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Describe your dream cake" required></textarea>
+                <button type="submit">Submit Custom Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Baker's Hut. All rights reserved.</p>
+    </footer>
+
+    <div id="cake-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="cake-3d-container"></div>
+            <div id="cake-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
